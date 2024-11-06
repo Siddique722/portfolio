@@ -199,6 +199,8 @@ class _ContainerOneDesktopState extends State<ContainerOneDesktop>
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 width: width * 0.7,
@@ -270,15 +272,18 @@ class _ContainerOneDesktopState extends State<ContainerOneDesktop>
                   ),
                 ),
               ),
-              FadeTransition(
-                opacity: _avatarAnimation,
-                child: ScaleTransition(
-                  scale: _avatarAnimation,
-                  child: Container(
-                    width: width * 0.3,
-                    child: CircleAvatar(
-                      radius: 90,
-                      // backgroundImage: AssetImage('assets/avatar.png'), // replace with actual image
+              Padding(
+                padding: const EdgeInsets.only(top: 0.0),
+                child: FadeTransition(
+                  opacity: _avatarAnimation,
+                  child: ScaleTransition(
+                    scale: _avatarAnimation,
+                    child: Container(
+                      width: width * 0.3,
+                      height: 300,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('lib/assets/image.jpg'),)
+                      ),
                     ),
                   ),
                 ),
