@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/portfolio_views/container_1/container_1.dart';
 import 'package:portfolio/portfolio_views/container_2/container-2.dart';
+import 'package:portfolio/portfolio_views/container_3/container3-main.dart';
 
 
 class StartingView extends StatefulWidget {
@@ -17,7 +18,8 @@ class _StartingViewState extends State<StartingView> {
       body: SingleChildScrollView(
         child: Column(children: [
           ContainerOneMain(),
-          ContainerTwoMain()
+          ContainerTwoMain(),
+          ContainerThreeMain()
 
         ],),
       ),

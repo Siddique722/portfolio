@@ -103,7 +103,7 @@ class ColumnWidget extends StatelessWidget {
           Text(
             text2,
             style: GoogleFonts.inconsolata(
-                color: Color(0xff767676), fontSize: 16, fontWeight: FontWeight.w300),
+                color: Color(0xff767676), fontSize: 16, fontWeight: FontWeight.w400),
           ),
         ],
       ),
