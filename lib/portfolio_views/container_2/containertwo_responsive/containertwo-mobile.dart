@@ -68,7 +68,8 @@ class ColumnWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      width: width * 0.25,
+      margin: EdgeInsets.all(30),
+     // width: width * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
