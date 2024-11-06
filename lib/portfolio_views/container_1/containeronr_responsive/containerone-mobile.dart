@@ -161,9 +161,13 @@ class _ContainerOneMobileState extends State<ContainerOneMobile>
         padding: const EdgeInsets.only(top: 15.0, left: 25, right: 25),
         child: Column(
           children: [
-            CircleAvatar(
-              radius: 90,
-              // backgroundImage: AssetImage('assets/avatar.png'), // replace with actual image
+            SizedBox(height: 30,),
+            Container(
+              //width: width * 0.9,
+              height: 300,
+              decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage('lib/assets/image.jpg'),)
+              ),
             ),
             SlideTransition(
               position: _textAnimation,

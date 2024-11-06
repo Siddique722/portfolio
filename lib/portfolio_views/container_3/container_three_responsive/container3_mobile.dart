@@ -71,37 +71,40 @@ class ProjectWidget extends StatelessWidget {
 
     return Container(
     //  width: width * 0.25,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 150,
-            width: 150,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(500),
-                border: Border.all(color: AppColor.greenPrimaryColor, width: 7)),
-            child: Center(
-              child: Icon(
-                Icons.developer_mode, // Icon representing the project
-                color: AppColor.greenPrimaryColor,
-                size: 50,
+      child: Padding(
+        padding: const EdgeInsets.all(30.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 150,
+              width: 150,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(500),
+                  border: Border.all(color: AppColor.greenPrimaryColor, width: 7)),
+              child: Center(
+                child: Icon(
+                  Icons.developer_mode, // Icon representing the project
+                  color: AppColor.greenPrimaryColor,
+                  size: 50,
+                ),
               ),
             ),
-          ),
-          SizedBox(height: 5),
-          Text(
-            projectName,
-            style: GoogleFonts.inconsolata(
-                color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 5),
-          Text(
-            projectDetails,
-            style: GoogleFonts.inconsolata(
-                color: Color(0xff767676), fontSize: 16, fontWeight: FontWeight.w300),
-          ),
-        ],
+            SizedBox(height: 5),
+            Text(
+              projectName,
+              style: GoogleFonts.inconsolata(
+                  color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 5),
+            Text(
+              projectDetails,
+              style: GoogleFonts.inconsolata(
+                  color: Color(0xff767676), fontSize: 16, fontWeight: FontWeight.w300),
+            ),
+          ],
+        ),
       ),
     );
   }
