@@ -25,6 +25,9 @@ class _ContainertwoDesktopState extends State<ContainertwoDesktop> {
             fontSize: 42,
             fontWeight: FontWeight.bold
         ),),
+        Row(children: [
+          ColumnWidget(text1: 'Front End', text2: 'I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ')
+        ],)
 
 
 
