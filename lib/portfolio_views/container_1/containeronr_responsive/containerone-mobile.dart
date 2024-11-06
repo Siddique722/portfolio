@@ -178,24 +178,26 @@ class _ContainerOneMobileState extends State<ContainerOneMobile>
                     'Siddique Qureshi',
                     style: GoogleFonts.inconsolata(
                         color: Colors.white,
-                        fontSize: 42,
+                        fontSize: 38,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     'Flutter Developer',
                     style: GoogleFonts.inconsolata(
                         color: AppColor.greenPrimaryColor,
-                        fontSize: 32,
+                        fontSize: 30,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
                     'I specialize in Flutter app development using Dart, Firebase, and GetX for creating efficient, cross-platform mobile solutions. With a strong focus on clean code and seamless user experiences, I utilize GitHub for version control and collaboration, delivering high-quality apps.',
                     style: GoogleFonts.inconsolata(
                         color: Colors.white,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w500),
-                    textAlign: TextAlign.center,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500
+                    ),
+                    textAlign: TextAlign.left, // Changed from TextAlign.center to TextAlign.left
                   ),
+
                 ],
               ),
             ),
