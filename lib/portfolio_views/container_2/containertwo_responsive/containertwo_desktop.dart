@@ -55,6 +55,8 @@ class ColumnWidget extends StatelessWidget {
     return   Container(
       width: width*0.25,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 180,
@@ -66,11 +68,13 @@ class ColumnWidget extends StatelessWidget {
             child: Center(child:
             Image.asset('lib/assets/icon.png'),),
           ),
+         SizedBox(height: 5,),
           Text(text1,style: GoogleFonts.inconsolata(
               color: Colors.white,
               fontSize: 24,
               fontWeight: FontWeight.bold
           ),),
+          SizedBox(height: 5,),
           Text(text2,style: GoogleFonts.inconsolata(
               color: Color(0xff767676),
               fontSize: 16,
