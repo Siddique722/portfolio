@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/responsive_layout/responsive-layout.dart';
 import 'package:portfolio/views/home_screen/home_responsive_screens/desktop-home.dart';
+import 'package:portfolio/views/home_screen/home_responsive_screens/mobile-home.dart';
 
 
 class HomeView extends StatefulWidget {
@@ -18,11 +19,11 @@ class _HomeViewState extends State<HomeView> {
         desktop: HomeDesktop(),
 
         // screen for mobile
-       mobile: HomeDesktop(),
+       mobile: HomeMobile(),
        //  mobile: HomeDesktop(),
 
         //screen for tablet
-      tablet: HomeDesktop(),
+      tablet: HomeMobile(),
 //        tablet: HomeDesktop()
     );
   }

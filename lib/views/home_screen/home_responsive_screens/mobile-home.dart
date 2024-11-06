@@ -1,76 +1,73 @@
 import 'package:flutter/material.dart';
 
-class HomeDesktop extends StatefulWidget {
-  const HomeDesktop({super.key});
+class HomeMobile extends StatefulWidget {
+  const HomeMobile({super.key});
 
   @override
-  State<HomeDesktop> createState() => _HomeDesktopState();
+  State<HomeMobile> createState() => _HomeMobileState();
 }
 
-class _HomeDesktopState extends State<HomeDesktop> {
+class _HomeMobileState extends State<HomeMobile> {
   @override
   Widget build(BuildContext context) {
     double wi=MediaQuery.of(context).size.width;
     double height=MediaQuery.of(context).size.height;
     return Scaffold(
-      body: Column(children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: wi*0.3,
-              height: 50,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 50,
-              width: wi*0.6,
-              color: Colors.black38,
-            )
-          ],
-        ),
-        SizedBox(height: 20,),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              height: 50,
-              width: wi*0.3,
-              color: Colors.orange,
-            ),
-            Container(
-              height: 50,
-              width: wi*0.3,
-              color: Colors.green,
-            ),
-            Container(
-              height: 50,
-              width: wi*0.3,
-              color: Colors.purple,
-            ),
-          ],
-        ),
-        SizedBox(height: 20,),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              height: 200,
-              width: wi*0.3,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 200,
-              width: wi*0.3,
-              color: Colors.purple,
-            ),
-            Container(
-              height: 200,
-              width: wi*0.3,
-              color: Colors.orange,
-            ),
-          ],)
-      ],),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                width: wi*0.3,
+                height: 50,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 50,
+                width: wi*0.6,
+                color: Colors.black38,
+              )
+            ],
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 50,
+            width: wi*0.9,
+            color: Colors.orange,
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 50,
+            width: wi*0.9,
+            color: Colors.green,
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 50,
+            width: wi*0.9,
+            color: Colors.purple,
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 200,
+            width: wi*0.9,
+            color: Colors.blue,
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 200,
+            width: wi*0.9,
+            color: Colors.purple,
+          ),
+          SizedBox(height: 20,),
+          Container(
+            height: 200,
+            width: wi*0.9,
+            color: Colors.orange,
+          ),
+        ],),
+      ),
     );
   }
 }
