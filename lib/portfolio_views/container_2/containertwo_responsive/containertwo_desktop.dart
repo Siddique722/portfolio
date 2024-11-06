@@ -26,18 +26,48 @@ class _ContainertwoDesktopState extends State<ContainertwoDesktop> {
             fontWeight: FontWeight.bold
         ),),
 
-        Container(
-          height: 180,
-          width: 180,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(500),
-            border: Border.all(color: AppColor.greenPrimaryColor,width: 9)
-          ),
-          child: Center(child: 
-            Image.asset('lib/assets/icon.png'),),
-        )
+
 
       ],),
     );
   }
 }
+
+class ColumnWidget extends StatelessWidget {
+  String text1;
+  String text2;
+   ColumnWidget({super.key,
+   required this.text1,
+     required this.text2
+
+   });
+
+  @override
+  Widget build(BuildContext context) {
+    return   Column(
+      children: [
+        Container(
+          height: 180,
+          width: 180,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(500),
+              border: Border.all(color: AppColor.greenPrimaryColor,width: 9)
+          ),
+          child: Center(child:
+          Image.asset('lib/assets/icon.png'),),
+        ),
+        Text(text1,style: GoogleFonts.inconsolata(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold
+        ),),
+        Text(text2,style: GoogleFonts.inconsolata(
+            color: Color(0xff767676),
+            fontSize: 16,
+            fontWeight: FontWeight.w300
+        ),),
+      ],
+    );
+  }
+}
+
