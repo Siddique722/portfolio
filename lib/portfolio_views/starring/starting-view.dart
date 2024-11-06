@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/portfolio_views/container_1/container_1.dart';
 
 
 class StartingView extends StatefulWidget {
@@ -14,6 +15,7 @@ class _StartingViewState extends State<StartingView> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(children: [
+          ContainerOneMain()
 
         ],),
       ),

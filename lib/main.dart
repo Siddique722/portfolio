@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/portfolio_views/starring/starting-view.dart';
 import 'package:portfolio/views/home_screen/home-screen.dart';
 
 void main() {
@@ -32,7 +33,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeView()//const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:
+      StartingView()
+      //HomeView()//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
