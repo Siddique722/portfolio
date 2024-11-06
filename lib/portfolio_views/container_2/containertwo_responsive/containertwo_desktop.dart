@@ -26,6 +26,17 @@ class _ContainertwoDesktopState extends State<ContainertwoDesktop> {
             fontWeight: FontWeight.bold
         ),),
 
+        Container(
+          height: 180,
+          width: 180,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(500),
+            border: Border.all(color: AppColor.greenPrimaryColor,width: 9)
+          ),
+          child: Center(child: 
+            Image.asset('lib/assets/icon.png'),),
+        )
+
       ],),
     );
   }
