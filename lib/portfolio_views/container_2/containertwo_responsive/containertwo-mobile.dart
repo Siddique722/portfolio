@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/Controller/constants/color.dart';
 
-class ContainertwoDesktop extends StatefulWidget {
-  const ContainertwoDesktop({super.key});
+class ContainertwoMobile extends StatefulWidget {
+  const ContainertwoMobile({super.key});
 
   @override
-  State<ContainertwoDesktop> createState() => _ContainertwoDesktopState();
+  State<ContainertwoMobile> createState() => _ContainertwoMobileState();
 }
 
-class _ContainertwoDesktopState extends State<ContainertwoDesktop> {
+class _ContainertwoMobileState extends State<ContainertwoMobile> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -26,42 +26,32 @@ class _ContainertwoDesktopState extends State<ContainertwoDesktop> {
             style: GoogleFonts.inconsolata(
                 color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ColumnWidget(
-                  text1: 'Flutter for Cross-Platform Design',
-                  text2:
-                  'I specialize in building cross-platform applications using Flutter, ensuring consistent designs and optimal performance.'),
-              ColumnWidget(
-                  text1: 'Dart for Backend',
-                  text2:
-                  'I use Dart for backend logic and server-side operations, enabling smooth integration with frontend services.'),
-              ColumnWidget(
-                  text1: 'Firebase for Database',
-                  text2:
-                  'I integrate Firebase for real-time databases, user authentication, and secure data storage.'),
-            ],
-          ),
-          SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ColumnWidget(
-                  text1: 'API Integration',
-                  text2:
-                  'I integrate third-party APIs into apps for enhanced functionality and data synchronization.'),
-              ColumnWidget(
-                  text1: 'GetX and BLoC State Management',
-                  text2:
-                  'I utilize GetX and BLoC for efficient state management, making apps more scalable and maintainable.'),
-              ColumnWidget(
-                  text1: 'Mentorship for Flutter',
-                  text2:
-                  'I offer mentorship to developers looking to learn Flutter and improve their skills in mobile development.'),
-            ],
-          ),
+          SizedBox(height: 10),
+          ColumnWidget(
+              text1: 'Flutter for Cross-Platform Design',
+              text2:
+              'I specialize in building cross-platform applications using Flutter, ensuring consistent designs and optimal performance.'),
+          ColumnWidget(
+              text1: 'Dart for Backend',
+              text2:
+              'I use Dart for backend logic and server-side operations, enabling smooth integration with frontend services.'),
+          ColumnWidget(
+              text1: 'Firebase for Database',
+              text2:
+              'I integrate Firebase for real-time databases, user authentication, and secure data storage.'),
+          SizedBox(height: 10),
+          ColumnWidget(
+              text1: 'API Integration',
+              text2:
+              'I integrate third-party APIs into apps for enhanced functionality and data synchronization.'),
+          ColumnWidget(
+              text1: 'GetX and BLoC State Management',
+              text2:
+              'I utilize GetX and BLoC for efficient state management, making apps more scalable and maintainable.'),
+          ColumnWidget(
+              text1: 'Mentorship for Flutter',
+              text2:
+              'I offer mentorship to developers looking to learn Flutter and improve their skills in mobile development.'),
         ],
       ),
     );

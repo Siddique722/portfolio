@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/components/responsive_layout/responsive-layout.dart';
+import 'package:portfolio/portfolio_views/container_2/containertwo_responsive/containertwo-mobile.dart';
 import 'package:portfolio/portfolio_views/container_2/containertwo_responsive/containertwo_desktop.dart';
 
 
@@ -16,7 +17,7 @@ class _ContainerTwoMainState extends State<ContainerTwoMain> {
     return
       ResponsiveLayotWidget(
         desktop: ContainertwoDesktop(),
-        mobile: ContainertwoDesktop(),
-        tablet: ContainertwoDesktop());
+        mobile: ContainertwoMobile(),
+        tablet: ContainertwoMobile());
    }
 }
