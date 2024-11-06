@@ -54,22 +54,22 @@ class _HomeDesktopState extends State<HomeDesktop> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-          Container(
-            height: 200,
-            width: wi*0.3,
-            color: Colors.blue,
-          ),
-          Container(
-            height: 200,
-            width: wi*0.3,
-            color: Colors.purple,
-          ),
-          Container(
-            height: 200,
-            width: wi*0.3,
-            color: Colors.orange,
-          ),
-        ],)
+            Container(
+              height: 200,
+              width: wi*0.3,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 200,
+              width: wi*0.3,
+              color: Colors.purple,
+            ),
+            Container(
+              height: 200,
+              width: wi*0.3,
+              color: Colors.orange,
+            ),
+          ],)
       ],),
     );
   }
