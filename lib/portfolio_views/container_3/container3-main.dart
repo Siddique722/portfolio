@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/components/responsive_layout/responsive-layout.dart';
 import 'package:portfolio/portfolio_views/container_2/containertwo_responsive/containertwo_desktop.dart';
 import 'package:portfolio/portfolio_views/container_3/container_three_responsive/container3_desktop.dart';
+import 'package:portfolio/portfolio_views/container_3/container_three_responsive/container3_mobile.dart';
 
 
 class ContainerThreeMain extends StatefulWidget {
@@ -17,7 +18,7 @@ class _ContainerThreeMainState extends State<ContainerThreeMain> {
     return
       ResponsiveLayotWidget(
           desktop: ContainerthreeDesktop(),
-          mobile: ContainerthreeDesktop(),
-          tablet: ContainerthreeDesktop());
+          mobile: ContainerthreeMobile(),
+          tablet: ContainerthreeMobile());
   }
 }

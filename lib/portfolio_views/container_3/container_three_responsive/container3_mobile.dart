@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/Controller/constants/color.dart';
 
-class ContainerthreeDesktop extends StatefulWidget {
-  const ContainerthreeDesktop({super.key});
+class ContainerthreeMobile extends StatefulWidget {
+  const ContainerthreeMobile({super.key});
 
   @override
-  State<ContainerthreeDesktop> createState() => _ContainerthreeDesktopState();
+  State<ContainerthreeMobile> createState() => _ContainerthreeMobileState();
 }
 
-class _ContainerthreeDesktopState extends State<ContainerthreeDesktop> {
+class _ContainerthreeMobileState extends State<ContainerthreeMobile> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -26,43 +26,33 @@ class _ContainerthreeDesktopState extends State<ContainerthreeDesktop> {
             style: GoogleFonts.inconsolata(
                 color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 10),
           // Displaying project details in rows with columns
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ProjectWidget(
-                  projectName: 'Project One',
-                  projectDetails:
-                  'A Flutter app built for cross-platform mobile development, featuring state management with GetX and Firebase for data storage.'),
-              ProjectWidget(
-                  projectName: 'Project Two',
-                  projectDetails:
-                  'A Dart backend API integration project that handles dynamic user data and real-time operations using Firebase Cloud Functions.'),
-              ProjectWidget(
-                  projectName: 'Project Three',
-                  projectDetails:
-                  'An eCommerce Flutter app with full API integration for product listings, cart management, and secure payments.'),
-            ],
-          ),
-          SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ProjectWidget(
-                  projectName: 'Project Four',
-                  projectDetails:
-                  'A social media app developed using Flutter, with real-time chat functionality, push notifications, and Firebase backend.'),
-              ProjectWidget(
-                  projectName: 'Project Five',
-                  projectDetails:
-                  'A personal blog website using Flutter Web, allowing users to create, edit, and share blog posts with real-time comments and reactions.'),
-              ProjectWidget(
-                  projectName: 'Project Six',
-                  projectDetails:
-                  'A portfolio website designed using Flutter Web to showcase my skills, projects, and expertise in mobile development.'),
-            ],
-          ),
+          ProjectWidget(
+              projectName: 'Project One',
+              projectDetails:
+              'A Flutter app built for cross-platform mobile development, featuring state management with GetX and Firebase for data storage.'),
+          ProjectWidget(
+              projectName: 'Project Two',
+              projectDetails:
+              'A Dart backend API integration project that handles dynamic user data and real-time operations using Firebase Cloud Functions.'),
+          ProjectWidget(
+              projectName: 'Project Three',
+              projectDetails:
+              'An eCommerce Flutter app with full API integration for product listings, cart management, and secure payments.'),
+          SizedBox(height: 10),
+          ProjectWidget(
+              projectName: 'Project Four',
+              projectDetails:
+              'A social media app developed using Flutter, with real-time chat functionality, push notifications, and Firebase backend.'),
+          ProjectWidget(
+              projectName: 'Project Five',
+              projectDetails:
+              'A personal blog website using Flutter Web, allowing users to create, edit, and share blog posts with real-time comments and reactions.'),
+          ProjectWidget(
+              projectName: 'Project Six',
+              projectDetails:
+              'A portfolio website designed using Flutter Web to showcase my skills, projects, and expertise in mobile development.'),
         ],
       ),
     );
@@ -80,7 +70,7 @@ class ProjectWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
 
     return Container(
-      width: width * 0.25,
+    //  width: width * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
